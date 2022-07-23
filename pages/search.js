@@ -10,7 +10,7 @@ const Search = ({ results }) => {
   // console.log("key", process.env.API_KEY);
 
   const router = useRouter();
-  console.log(results);
+  // console.log(results);
   return (
     <div>
       <Head>
@@ -28,8 +28,8 @@ const Search = ({ results }) => {
 export default Search;
 
 export async function getServerSideProps(context) {
-  console.log(process.env.API_KEY);
-  const useDummyData = true;
+  // console.log(process.env.API_KEY);
+  const useDummyData = false;
   const startIndex = context.query.start || "0";
 
   const data = useDummyData
